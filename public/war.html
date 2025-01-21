@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Stats | R.I.O.T.™</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leader-styles.css">
+    <link rel="stylesheet" href="war-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <div class="navbar-logo">R.I.O.T.™</div>
+    <ul class="navbar-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="war.html" class="nav-link">War Stats</a></li>
+    </ul>
+    <div class="navbar-toggle">☰</div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <header class="war-hero">
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title">Clan War Statistics</h1>
+        <p class="hero-description">Track battles, results, and progress as we rise to glory.</p>
+    </header>
+
+    <!-- Current Matchup -->
+    <section class="current-matchup">
+    <h2 class="section-title">Current Matchup</h2>
+    <div class="matchup-container">
+        <div class="matchup-card">
+            <img id="your-clan-badge" class="clan-badge" alt="Your Clan Badge">
+            <h3>Your Clan</h3>
+            <p id="your-clan-name"></p>
+            <p><strong>Level:</strong> <span id="your-clan-level"></span></p>
+            <p><strong>Score:</strong> <span id="your-clan-score"></span></p>
+            <p><strong>Destruction:</strong> <span id="your-clan-destruction"></span>%</p>
+        </div>
+        <div class="versus">VS</div>
+        <div class="matchup-card">
+            <img id="opponent-clan-badge" class="clan-badge" alt="Opponent Clan Badge">
+            <h3>Opponent Clan</h3>
+            <p id="opponent-clan-name"></p>
+            <p><strong>Level:</strong> <span id="opponent-clan-level"></span></p>
+            <p><strong>Score:</strong> <span id="opponent-clan-score"></span></p>
+            <p><strong>Destruction:</strong> <span id="opponent-clan-destruction"></span>%</p>
+        </div>
+    </div>
+</section>
+
+    <section class="participants">
+    <h2 class="section-title">War Participants</h2>
+    <div class="participants-container">
+        <div class="participant-card">
+            <h3>Your Clan</h3>
+            <table id="your-clan-participants">
+                <thead>
+                    <tr>
+                        <th>Spot</th>
+                        <th>Name</th>
+                        <th>Town Hall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+        <div class="participant-card">
+            <h3>Opponent Clan</h3>
+            <table id="opponent-clan-participants">
+                <thead>
+                    <tr>
+                        <th>Spot</th>
+                        <th>Name</th>
+                        <th>Town Hall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Last 5 Wars -->
+    <section class="last-wars">
+        <h2 class="section-title">Last 5 Wars</h2>
+        <ul id="last-5-wars">
+            <!-- Dynamically populated -->
+        </ul>
+    </section>
+
+
+    <!-- War League -->
+    <section class="war-league">
+        <h2 class="section-title">War League</h2>
+        <p id="war-league-name"></p>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://www.instagram.com/juiice.33/" target="_blank" class="social-link">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://link.clashofclans.com/en?action=OpenClanProfile&tag=VQO8UR9R" target="_blank" class="social-link">
+                <img src="images/clash-icon.png" alt="Clash of Clans" class="social-icon"> R.I.O.T.™ Clan
+            </a>
+            <a href="https://discord.gg/XcwVwm6wg2" target="_blank" class="social-link">
+                <img src="images/discord-icon.png" alt="Discord" class="social-icon"> Our Disocrd
+            </a>
+        </div>
+        <p>&copy; 2025 R.I.O.T.™. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script-warstats.js"></script>
+</body>
+</html>

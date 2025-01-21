@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | R.I.O.T.™</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">    </script>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leader-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <div class="navbar-logo">R.I.O.T.™</div>
+    <ul class="navbar-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="war.html" class="nav-link">War Stats</a></li>
+    </ul>
+    <div class="navbar-toggle">☰</div>
+</nav>
+
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+    <div class="leaderboard-header">
+        <h2 class="section-title">🏆 Leaderboard</h2>
+        <p class="section-subtitle">Track the champions and their climb to glory!</p>
+    </div>
+    <div class="leaderboard-container">
+        <ul id="leaderboard-left" class="leaderboard-list"></ul>
+        <ul id="leaderboard-right" class="leaderboard-list"></ul>
+    </div>
+</section>
+
+
+    <!-- Player Detail Modal -->
+    <div id="player-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <img class="league-badge" src="" alt="League Badge">
+            <h2 id="player-name">Player Name</h2>
+            <div class="stats-container">
+                <div class="town-hall-stats">
+                    <h3>Town Hall Stats</h3>
+                    <p><strong>Level:</strong> <span id="player-townhall"></span></p>
+                    <p><strong>Trophies:</strong> <span id="player-trophies"></span></p>
+                    <p><strong>Donations:</strong> <span id="player-donations"></span></p>
+                </div>
+                <div class="builder-hall-stats">
+                    <h3>Player Stats</h3>
+                    <p><strong>Role:</strong> <span id="player-bh"></span></p>
+                    <p><strong>Level:</strong> <span id="player-bh-trophies"></span></p>
+                </div>
+            </div>
+            <p><strong>League:</strong> <span id="player-league"></span></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://www.instagram.com/juiice.33/" target="_blank" class="social-link">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://link.clashofclans.com/en?action=OpenClanProfile&tag=VQO8UR9R" target="_blank" class="social-link">
+                <img src="images/clash-icon.png" alt="Clash of Clans" class="social-icon"> R.I.O.T.™ Clan
+            </a>
+            <a href="https://discord.gg/XcwVwm6wg2" target="_blank" class="social-link">
+                <img src="images/discord-icon.png" alt="Discord" class="social-icon"> Our Disocrd
+            </a>
+        </div>
+        <p>&copy; 2025 R.I.O.T.™. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+    <script src="script-leaderboard.js"></script>
+</body>
+</html>
